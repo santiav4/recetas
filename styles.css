@@ -30,7 +30,6 @@ li {
 }
 
 .main-container {
-    border: 1px solid red;
     height: 100%;
     width: 600px;
     margin: 0 auto;
@@ -54,7 +53,6 @@ li {
 }
 
 .post {
-    border: 1px dashed lightseagreen;
     height: 100%;
     width: 85%;
     margin: 0 auto;
@@ -100,7 +98,7 @@ nav {
     position: fixed;
     position: -webkit-sticky;
     width: 600px;
-    background-color: lightsalmon;
+    background-color: lightseagreen;
     height: 100px;
     bottom: 0;
 }
