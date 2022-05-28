@@ -1,22 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;800&family=Tiro+Devanagari+Sanskrit&display=swap");
 * {
-    margin:0;
     box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-family: "Tiro Devanagari Sanskrit", serif;
 }
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p,
+li {
+    font-size: 1.2rem;
+}
+
 .main-container {
-    border:1px solid red;
+    border: 1px solid red;
+    height: 100%;
     width: 600px;
-    margin:0 auto;
-    display:flex;
-    flex-direction:column;
-    position:relative;
-    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.header {
+    background-color: lightseagreen;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
 }
 
 .post {
-    border:1px solid lightcoral;
-    width:85%;
-    margin:0 auto;
-    flex-grow:1;
+    border: 1px dashed lightseagreen;
+    height: 100%;
+    width: 85%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.post-content {
+    height: 100%;
 }
 
 /* .post-title {
@@ -28,19 +74,38 @@
 } */
 
 .post-img {
-    width:100%;
-    height:400px;
+    width: 100%;
+    height: 400px;
+}
+
+.pasos {
+    list-style: none;
+}
+
+.pasos li span {
+    font-size: 1.5rem;
+    background-color: lightseagreen;
+    color: white;
+    display: inline-block;
+    width: 2rem;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 10px;
 }
 
 nav {
-    display:flex;
-    align-items:center;
-    justify-content:space-evenly;
-    position:sticky;
-    position:-webkit-sticky;
-    width: 100%;
-    background-color:lightsalmon;
-    height:20%;
-    bottom:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    position: -webkit-sticky;
+    width: 600px;
+    background-color: lightsalmon;
+    height: 100px;
+    bottom: 0;
 }
 
+.svg-nav {
+    width: 35px;
+    height: 35px;
+}
